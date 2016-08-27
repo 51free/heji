@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>student</title>
+    <link rel="stylesheet" href="./css/student.css">
+</head>
+
+<body>
+    <div class="wrap">
+    <!-- FORM方法 -->
+    <form id="form_results" action="">
+        <h2>学生成绩等级查询</h2>
+        <input id="studentScore" class="in-score" type="text" placeholder="请输入成绩以便查询"/>
+        <input id="checkScore" class="btn" type="button" value="点击查询">
+        <p id="finalScore"></p>
+        
+
+    </form>
+    <!-- 首次练习 -->
+        <table>
+            <tr>
+                <td colspan="2">
+                    <h4>优等生等级查询</h4></td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="in-score" type="text" id="score" name="score" placeholder="请输入成绩以便查询">
+                </td>
+                <td>
+                    <input class="btn" type="button" id="btn" name="btn" value="查 询" onclick="student()">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="text" id="result">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script language="JavaScript" src="./js/student.js">
+    </script>
+</body>
+
+</html>

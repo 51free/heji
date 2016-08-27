@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*最外层*/
+
+#view {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-left: -100px;
+    width: 200px;
+    height: 200px;
+    /*3D效果*/
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-animation-name: animations;
+    -webkit-animation-duration: 8s;
+    -webkit-animation-timing-function：ease;
+    -webkit-animation-iteration-count: infinite;
+}
+
+
+/*动画效果*/
+
+@-webkit-keyframes animations {
+    0% {
+        -webkit-transform: rotateZ(270deg);
+    }
+    25% {
+        -webkit-transform: rotateY(180deg);
+    }
+    50% {
+        -webkit-transform: rotateZ(-270deg);
+    }
+    75% {
+        -webkit-transform: rotateY(-180deg);
+    }
+}
+
+
+#box > div {
+    position: absolute;
+    top: 0;
+    width: 198px;
+    height: 198px;
+    border-radius: 10px;
+}
+
+
+/*魔方各个面的摆放样式*/
+
+.one {
+    -webkit-transform: translateZ(100px);
+    transform: translateZ(100px);
+}
+
+.two {
+    -webkit-transform: rotateX(90deg) translateZ(100px);
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+.three {
+    -webkit-transform: rotateX(90deg) translateZ(-100px);
+    transform: rotateX(90deg) translateZ(-100px);
+}
+
+.four {
+    -webkit-transform: rotateY(90deg) translateZ(-100px);
+    transform: rotateY(90deg) translateZ(-100px);
+}
+
+.five {
+    -webkit-transform: rotateY(90deg) translateZ(100px);
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+.six {
+    -webkit-transform: translateZ(-100px);
+    transform: translateZ(-100px);
+}
+
+
+/*cube1各个元素的样式*/
+
+.min_cube1 {
+    width: 59px;
+    height: 59px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: blue;
+}
+
+.min_cube2 {
+    width: 59px;
+    height: 59px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: darkgray;
+}
+
+.min_cube3 {
+    width: 59px;
+    height: 59px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: yellow;
+}
+
+.min_cube4 {
+    width: 59px;
+    height: 59px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: orange;
+}
+
+.min_cube5 {
+    width: 59px;
+    height: 59px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color:red;
+}
+
+.min_cube6 {
+    width: 59px;
+    height: 59px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: green;
+}

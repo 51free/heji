@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>页面框架样例</title>
+    <link rel="stylesheet" href="./store.css">
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+    <!-- 整个头部导航 -->
+    <header class="clearfix">
+        <!-- LOGO  整个导航左侧20%-->
+        <div class="logo c3">
+            LOGO
+        </div>
+        <!-- 整个导航 右侧 80%-->
+        <div class="nav_wrapper c9">
+            <!-- 顶部右侧菜单 -->
+            <div id="global_nav" class="c12">
+                <ul>
+                    <!-- (li>a{item$})*8   生成8个li-->
+                    <li><a href="">item1</a></li>
+                    <li><a href="">item2</a></li>
+                    <li><a href="">item3</a></li>
+                    <li><a href="">item4</a></li>
+                    <li><a href="">item5</a></li>
+                    <li><a href="">item6</a></li>
+                    <li><a href="">item7</a></li>
+                    <li><a href="">item8</a></li>
+                </ul>
+            </div>
+            <!-- 顶部 中间 搜索栏目 -->
+            <div class="search_wrapper  c12">
+                <!-- 搜索框 -->
+                <div class="search_bar c6">
+                    <form action="">
+                        <div class="input_wrapper">
+                            <input type="text">
+                        </div>
+                    </form>
+                </div>
+                <!-- 搜索栏目右侧工具菜单 -->
+                <div class="tool_group c6">
+                    <button>item1</button>
+                    <button>item2</button>
+                    <button>item3</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 中间导航部分 -->
+    <nav id="product_nav">
+        <ul>
+            <li><a href="#">item1</a></li>
+            <li><a href="#">item2</a></li>
+            <li><a href="#">item3</a></li>
+            <li><a href="#">item4</a></li>
+            <li><a href="#">item5</a></li>
+            <li><a href="#">item6</a></li>
+            <li><a href="#">item7</a></li>
+            <li><a href="#">item8</a></li>
+        </ul>
+    </nav>
+    <!-- 主体轮播部分 -->
+    <div class="on_sale_wrapper">
+        <div class="container">
+            <!-- 中间图片层 -->
+            <div class="site_menu c3">
+                <!-- 中部左侧多级菜单 -->
+                <div class="cat">
+                    <dl>
+                        <dt>item1</dt>
+                        <dd>
+                            <a href="">item1</a>
+                            <a href="">item2</a>
+                            <a href="">item3</a>
+                            <a href="">item4</a>
+                            <a href="">item5</a>
+                            <a href="">item6</a>
+                            <a href="">item5</a>
+                            <a href="">item6</a>
+                        </dd>
+                    </dl>
+                    <div class="sub_menu">
+                        <dl>
+                            <dt>item1-1</dt>
+                            <dd>
+                                <a href="">item1</a>
+                                <a href="">item2</a>
+                                <a href="">item3</a>
+                                <a href="">item4</a>
+                                <a href="">item5</a>
+                                <a href="">item6</a>
+                                <a href="">item5</a>
+                                <a href="">item6</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>item1-2</dt>
+                            <dd>
+                                <a href="">item1</a>
+                                <a href="">item2</a>
+                                <a href="">item3</a>
+                                <a href="">item4</a>
+                                <a href="">item5</a>
+                                <a href="">item6</a>
+                                <a href="">item5</a>
+                                <a href="">item6</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <!-- 每个DIV后面有一个GAP 来控制间隙，可控性更强 -->
+                <div class="gap"></div>
+                <div class="cat">
+                    <dl>
+                        <dt>item1</dt>
+                        <dd>
+                            <a href="">item1</a>
+                            <a href="">item2</a>
+                            <a href="">item3</a>
+                            <a href="">item4</a>
+                            <a href="">item5</a>
+                            <a href="">item6</a>
+                            <a href="">item5</a>
+                            <a href="">item6</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="gap"></div>
+                <div class="cat"></div>
+            </div>
+            <div class="slider c7">
+                <div class="slider_item"><img src="./img/31.jpg" alt=""></div>
+                <div class="slider_item hide"><img src="./img/32.jpg" alt=""></div>
+                <div class="slider_item hide"><img src="./img/33.jpg" alt=""></div>
+                <!-- 向左右滑动 -->
+                <div class="tool_pn">
+                    <div class="prev">Prev</div>
+                    <div class="next">Next</div>
+                </div>
+                <div class="slider_nav">
+                    <i class="active"></i>
+                    <i></i>
+                    <i></i>
+                </div>
+            </div>
+            <div class="ad_grid c2">
+                雪影娃娃是《洛克王国》的冰系宠物，分组为精灵组，可遗传孵化(在超进化成幽兰雪魅之前)。目前获得方式:1.弹弹机概率获得 2.通过孵化王国好友送的雪影蛋获得
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

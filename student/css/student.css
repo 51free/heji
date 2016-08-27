@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*优化后样式*/
+
+#form_results {
+    display: block;
+    width: 300px;
+    height: 50px;
+    margin: 100px auto;
+}
+
+#form_results .in-score {
+    display: inline-block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #E8E8E8;
+    box-shadow: 1px 1px 1px #BBBBBB;
+    margin: 10px auto;
+    outline: none;
+}
+
+#form_results .btn {
+    display: inline-block;
+    width: 70px;
+    height: 34px;
+    line-height: 30px;
+    text-align: center;
+    border: 0;
+    border-radius: 5px;
+    color: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    box-shadow: 1px 1px 1px #BBBBBB;
+    background-color: rgb(16, 130, 222);
+    cursor: pointer;
+    outline: none;
+}
+
+
+/*首次练习*/
+
+.wrap {
+    position: relative;
+    top: 50px;
+    width: 30%;
+    height: 200px;
+    /*border: 1px solid;*/
+    margin: 0 auto;
+}
+
+.wrap table tr {
+    margin: 0 auto;
+    height: 25px;
+    padding: 15px 0;
+}
+
+.wrap table tr:first-child td {
+    text-align: center;
+}
+
+.wrap table tr:last-child td:first-child {
+    text-align: left;
+    width: 100%;
+}
+
+.wrap table .btn {
+    width: 100%;
+    height: 20px;
+    background-color: #DDD;
+}

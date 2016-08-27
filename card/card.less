@@ -1,0 +1,126 @@
+@width: 460px;
+@height: 260px;
+@red: red;
+@green: green;
+@w0: 0;
+@w5: 5px;
+@w100: 100px;
+//margin-auto
+#auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+#width{
+	width:460px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    position: relative;
+    #auto();
+    margin-top: @height;
+    #width();
+    height: @w100*2.8;
+    border: 1px solid lightgrey;
+
+}
+
+//第一行 
+.hang1 {
+    #width();
+    height: 90px;
+    .num {
+        width: @w100;
+        height: @w5*10;
+        position: absolute;
+        top: @w5*4;
+        font-weight: bolder;
+        font-size: @w5*8;
+        text-align: center;
+        padding-top: @w5*3;
+        vertical-align: center;
+        color: white;
+        float: left;
+        background-color: red;
+    }
+    .charr {
+        width: @w100*3.5;
+        height: @w5*12;
+        position: absolute;
+        left: @w100;
+        top: @w5*4;
+        display: inline-block;
+        float: left;
+        .char1 {
+            position: relative;
+            top: 10px;
+            font-size: @w5*4;
+            color: green;
+            text-align: center;
+        }
+        .char2 {
+            position: relative;
+            top: @w5*4;
+            font-size: @w5*2;
+            color: green;
+            font-weight: bolder;
+            text-align: center;
+        }
+    }
+}
+
+.hang2 span:first-child,
+.hang2 span:last-child,
+.hang1 .charr .char2 span:last-child {
+    position: relative;
+    left: 10px;
+}
+
+//第三行
+.hang3 {
+    #width();
+    height: @w100*1.2;
+    margin-top: @w5;
+    /* padding-left: @w5*10; */
+    text-align: center;
+    background-color: green;
+    div {
+        margin: 10px 20px 10px 25px;
+        width: @w5*4;
+        color: white;
+        float: left;
+    }
+}
+
+//第四行
+.hang4 {
+    #width();
+    height: @w5*10;
+    margin-top: @w5*2;
+    text-align: center;
+    span {
+        font-size: 13px;
+    }
+    .h41 {
+        margin-left: @w5*12;
+        width: @w100*3.5;
+        height: @w5;
+        background-color: red;
+    }
+    .h42 {
+        position: relative;
+        top: -15px;
+        left: @w100*4;
+        width: 0;
+        height: 0;
+        border: 15px solid;
+        border-bottom: 0;
+        border-left-color: red;
+        border-right-color: transparent;
+        border-top-color: transparent;
+    }
+}

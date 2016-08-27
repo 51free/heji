@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 600px;
+    min-height: 500px;
+}
+
+
+/*头样式*/
+
+header {
+    background-color: red;
+    height: 150px;
+}
+
+
+/*主体样式*/
+
+article {
+    background-color: green;
+    height: 400px;
+    /*溢出隐藏*/
+    overflow: hidden;
+}
+
+
+/*主体左面样式*/
+
+.left {
+    background-color: orange;
+    float: left;
+    width: 150px;
+    margin-left: -100%;
+    opacity: 1;
+    /*自动调整高度*/
+    padding-bottom: 9999px;
+    margin-bottom: -9999px;
+}
+
+
+/*主体右面样式*/
+
+.right {
+    background-color: white;
+    width: 100px;
+    float: left;
+    margin-left: -100px;
+    /*自动调整高度*/
+    padding-bottom: 9999px;
+    margin-bottom: -9999px;
+}
+
+
+/*主体中间样式*/
+
+.middle {
+    background-color: yellow;
+    width: 100%;
+    float: left;
+    /*自动调整高度*/
+    padding-bottom: 9999px;
+    margin-bottom: -9999px;
+}
+
+
+/*inner 双飞翼布局与圣杯布局核心区别*/
+
+.inner {
+    margin-left: 150px;
+    margin-right: 100px;
+}
+
+
+/*尾部样式*/
+
+footer {
+    background-color: blue;
+    height: 100px;
+}

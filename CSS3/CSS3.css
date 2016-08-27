@@ -1,0 +1,534 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*loader 动画样式 START */
+
+.box {
+    margin: 30px;
+    width: 100%;
+    padding: 0%;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid red;
+}
+
+.box .loader {
+    width: 16.66%;
+    height: 80px;
+    float: left;
+    margin-right: 0%;
+    border: 1px #CCC solid;
+    box-sizing: border-box;
+    /*居中对齐灵活的 <div> 元素的各项：*/
+    /*DIV 层内部的居中效果*/
+    display: flex;
+    /*垂直居中*/
+    align-items: center;
+    /*水平居中*/
+    justify-content: center;
+}
+
+.loader-1 {
+    width: 35px;
+    height: 35px;
+    position: relative;
+}
+
+.loader-1 i {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(transparent 0%, red 40%, transparent 50%, #333 100%);
+    -webkit-animation: loader-1 1s ease-in 0s infinite;
+}
+
+@-webkit-keyframes loader-1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(18deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader-2 i {
+    display: inline-block;
+    width: 3px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 0 2px;
+    background-color: #333;
+}
+
+.loader-2 i:nth-child(1) {
+    -webkit-animation: loader-2 1s ease-in 0.1s infinite;
+}
+
+.loader-2 i:nth-child(2) {
+    -webkit-animation: loader-2 1s ease-in 0.2s infinite;
+}
+
+.loader-2 i:nth-child(3) {
+    -webkit-animation: loader-2 1s ease-in 0.3s infinite;
+}
+
+.loader-2 i:nth-child(4) {
+    -webkit-animation: loader-2 1s ease-in 0.4s infinite;
+}
+
+.loader-2 i:nth-child(5) {
+    -webkit-animation: loader-2 1s ease-in 0.5s infinite;
+}
+
+@-webkit-keyframes loader-2 {
+    0% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(0.5);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+.loader-3 {
+    position: relative;
+    width: 5px;
+    height: 5px;
+}
+
+.loader-3 i {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #333;
+    position: absolute;
+}
+
+.loader-3 i:nth-child(1) {
+    top: 25px;
+    left: 0;
+    -webkit-animation: loader-3 1s ease-in 0s infinite;
+}
+
+.loader-3 i:nth-child(2) {
+    top: 17px;
+    left: 17px;
+    -webkit-animation: loader-3 1s ease-in 0.12s infinite;
+}
+
+.loader-3 i:nth-child(3) {
+    top: 0px;
+    left: 25px;
+    -webkit-animation: loader-3 1s ease-in 0.24s infinite;
+}
+
+.loader-3 i:nth-child(4) {
+    top: -17px;
+    left: 17px;
+    -webkit-animation: loader-3 1s ease-in 0.36s infinite;
+}
+
+.loader-3 i:nth-child(5) {
+    top: -25px;
+    left: 0;
+    -webkit-animation: loader-3 1s ease-in 0.48s infinite;
+}
+
+.loader-3 i:nth-child(6) {
+    top: 17px;
+    left: -17px;
+    -webkit-animation: loader-3 1s ease-in 0.6s infinite;
+}
+
+.loader-3 i:nth-child(7) {
+    top: 0px;
+    left: -25px;
+    -webkit-animation: loader-3 1s ease-in 0.72s infinite;
+}
+
+.loader-3 i:nth-child(8) {
+    top: -17px;
+    left: -17px;
+    -webkit-animation: loader-3 1s ease-in 0.84s infinite;
+}
+
+@-webkit-keyframes loader-3 {
+    /* 0% {
+            transform: scale(1);
+        }*/
+    50% {
+        transform: scale(0.4);
+        opacity: 0.3;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.loader-4 {
+    width: 60px;
+    height: 60px;
+    position: relative;
+}
+
+.loader-4 i {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #333;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.loader-4 i:nth-child(1) {
+    -webkit-animation: loading-4 1s linear 0s infinite;
+    ;
+}
+
+.loader-4 i:nth-child(2) {
+    /*-webkit-anmitation: loading-4 1s linear 1s infinite;;*/
+}
+
+.loader-4 i:nth-child(3) {
+    /*-webkit-anmitation: loading-4 1s linear 0.4s infinite;;*/
+}
+
+@-webkit-keyframes loading-4 {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        /*transform:scale(0);*/
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.loader-5 {
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.loader-5 i {
+    display: block;
+    border: 2px solid #333;
+    /*上下有颜色， 左右透明*/
+    border-color: #333 transparent;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.loader-5 i:first-child {
+    width: 35px;
+    height: 35px;
+    top: 0;
+    left: 0;
+    -webkit-animation: loader-5 1s ease-in-out 0s infinite;
+}
+
+.loader-5 i:last-child {
+    width: 15px;
+    height: 15px;
+    top: 10px;
+    left: 10px;
+    -webkit-animation: loader-5 1s ease-in-out 0.5s infinite reverse;
+}
+
+@-webkit-keyframes loader-5 {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(180deg) scale(0.6);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+.loader-6 {
+    width: 80px;
+    height: 20px;
+    position: relative;
+}
+
+.loader-6 i {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #333;
+    margin-right: 10px;
+    position: absolute;
+}
+
+.loader-6 i:nth-child(1) {
+    -webkit-animation: loader-6 2s linear 0s infinite;
+}
+
+.loader-6 i:nth-child(2) {
+    -webkit-animation: loader-6 2s linear -0.4s infinite;
+}
+
+.loader-6 i:nth-child(3) {
+    -webkit-animation: loader-6 2s linear -0.8s infinite;
+}
+
+.loader-6 i:nth-child(4) {
+    -webkit-animation: loader-6 2s linear -1.2s infinite;
+}
+
+.loader-6 i:nth-child(5) {
+    -webkit-animation: loader-6 2s linear -1.6s infinite;
+}
+
+@-webkit-keyframes loader-6 {
+    0% {
+        left: 100px;
+        top: 0;
+    }
+    80% {
+        left: 0;
+        top: 0;
+    }
+    85% {
+        left: 0;
+        top: -20px;
+        width: 20px;
+        height: 20px;
+    }
+    90% {
+        width: 40px;
+        height: 20px;
+    }
+    95% {
+        left: 100px;
+        top: -20px;
+        width: 20px;
+        height: 20px;
+    }
+    100% {
+        left: 100px;
+        top: 0;
+    }
+}
+
+
+/*loader 动画样式 END */
+
+
+/*loader 菜单转动特效 START */
+
+.nav {
+    margin: 30px;
+    width: 980px;
+    margin: 10px auto;
+    background-color: #FDFDFD;
+    border: 1px solid #CCC;
+}
+
+
+/*nav 清除浮动*/
+
+.nav:after {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    content: "";
+}
+
+.nav .item {
+    width: 100px;
+    height: 50px;
+    float: left;
+    margin-right: 5px;
+    /**/
+    perspective: 4000px;
+    perspective-origin: 0% 0%;
+}
+
+.nav .item a {
+    display: block;
+    height: 50px;
+    text-decoration: none;
+    transition: all .5s;
+    /*border: 1px solid red;*/
+    transform-style: preserve-3d;
+}
+
+.nav .item a p {
+    /*border: 1px solid black;*/
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    margin: 0;
+    color: #FFF;
+    font-size: 16px;
+    font-family: "Microsoft Yahei";
+    border-radius: 2px;
+    transition: all .5s;
+}
+
+.nav .item a p:first-child {
+    background-color: #090;
+    transform: translateZ(25px);
+}
+
+.nav .item a p:last-child {
+    background-color: #009;
+    transform: translateZ(25px) rotateX(-90deg);
+    margin-top: -25px;
+}
+
+.nav .item a:hover {
+    transform: rotateX(90deg);
+}
+
+.nav .item a:hover p:last-child {
+    margin-top: 0px;
+    transform: translateZ(0) rotateX(-90deg);
+}
+
+
+/*loader 菜单转动特效 END */
+
+
+/*球形立体三维旋转动画  START*/
+
+.box-ball {
+    margin: 30px;
+    position: relative;
+    left: 50px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    perspective-origin: 50% 200%;
+    perspective: 3000px;
+    
+}
+
+.ball {
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateZ(-60deg) rotateY(0deg);
+    -webkit-animation: rotate3D 30s infinite linear;
+}
+
+
+/*设置轴心*/
+
+.ball:after {
+    content: '';
+    width: 1px;
+    height: 200px;
+    background-color: black;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(75px) translateY(-25px);
+}
+
+.ball > div {
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.ball .line-1 {
+    transform: rotateY(0);
+    border-color: blue;
+}
+
+.ball .line-2 {
+    transform: rotateY(36deg);
+    border-color: purple;
+}
+
+.ball .line-3 {
+    transform: rotateY(72deg);
+    border-color: black;
+}
+
+.ball .line-4 {
+    transform: rotateY(108deg);
+    border-color: orange;
+}
+
+.ball .line-5 {
+    transform: rotateY(144deg);
+    border-color: yellow;
+}
+
+@-webkit-keyframes rotate3D {
+    0% {
+        transform: rotateZ(-60deg) rotateY(0);
+    }
+    0% {
+        transform: rotateZ(-60deg) rotateY(360deg);
+    }
+}
+
+
+/*球形立体三维旋转动画  END*/
+
+
+/*<!-- 滑动门  START-->*/
+
+.door a {
+    /*position: relative;*/
+    margin: 30px;
+    display: block;
+    background: #00FF00 url(./img/1.png) no-repeat 0 0;
+    width: 200px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    font-weight: bold;
+    /*滑动门 关键代码，显示左侧 边框*/
+    padding-left: 35px;
+}
+
+a span {
+    display: block;
+    height: 150px;
+    /*滑动门  关键代码，将右侧边框显示   注意：span右侧的X轴属性必须为right,图片左右边必须贴边*/
+    background: #00FF00 url(./img/1.png) no-repeat right 0;
+    padding-right: 35px;
+}
+
+
+/*鼠标覆盖后图片的变换*/
+
+a span:hover {
+    background-position: right -212px;
+}
+
+.door a:hover {
+    background-position: 0 -212px;
+}
+
+
+/*<!-- 滑动门  END-->*/

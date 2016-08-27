@@ -1,0 +1,112 @@
+*{
+	margin: 0;
+	padding:0;
+}
+
+li{
+	list-style: none;
+}
+
+html，body{
+	height: 100%;
+}
+
+/*容器的布局*/
+.container{
+	height: 100%;
+	border:1px solid red;
+	padding-top:200px;
+}
+
+/*wrap的宽高*/
+.wrap{
+	position: relative;
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+	/*3D设置+ 兼容性考虑*/
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform: rotateX(45deg) rotateY(135deg);
+	-webkit-animation: Square 3s ease infinite;
+}
+
+/*ul的宽高*/
+.wrap > ul{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+}
+
+/*li的宽高*/
+.wrap > ul > li{
+	width: 50px;
+	height: 50px;
+	/*限制li 的大小*/
+	box-sizing: border-box;
+	border:1px solid white;
+	float: left;
+	border-radius: 10px;
+}
+
+/*顶部颜色值*/
+.wrap .top li{
+	background-color: #F00;
+}
+/*底部的颜色值*/
+.wrap .bottom li{
+	background-color: #085;
+}
+/*左侧的颜色值*/
+.wrap .left li{
+	background-color: #FF0;
+}
+/*右侧的颜色值*/
+.wrap .right li{
+	background-color: #0FF;
+}
+/*前部的颜色值*/
+.wrap .front li{
+	background-color: #0F0;
+}
+/*后部的颜色值*/
+.wrap .behind li{
+	background-color: #00F;
+}
+
+/*围城正方形*/
+.wrap .top{
+	transform:translateY(-75px) rotateX(90deg);
+}
+.wrap .bottom{
+	transform:translateY(75px) rotateX(90deg);
+}
+.wrap .left{
+	transform:translateX(-75px) rotateY(90deg);
+}
+.wrap .right {
+	transform:translateX(75px) rotateY(90deg);
+}
+.wrap .front{
+	transform:translateZ(75px);
+}
+.wrap .behind{
+	transform:translateZ(-75px);
+}
+
+
+/*添加动画效果*/
+@-webkit-keyframes Square{
+	0%{-webkit-transform:rotateX(0deg);}
+	25%{-webkit-transform:rotateX(60deg);}
+	50%{-webkit-transform:rotateZ(135deg);}
+	75%{-webkit-transform:rotateY(120deg);}
+	100%{-webkit-transform:rotateX(90deg);}
+}
+
+

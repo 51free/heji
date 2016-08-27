@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>双飞翼模型</title>
+    <style type="text/css">
+    body {
+        margin: 0;
+        padding: 0;
+        /*text-align: center;*/
+    }
+    /*头样式*/
+    
+    header {
+        background-color: red;
+        height: 150px;
+    }
+    /*主体样式*/
+    
+    article {
+        background-color: green;
+        height: 300px;
+        padding-left: 150px;
+        padding-right: 100px;
+    }
+    /*主体左面样式*/
+    
+    .left {
+        background-color: orange;
+        float: left;
+
+        width: 150px;
+        height: 16px;
+        margin-left: -100%;
+        position: relative;
+        left: -150px;
+    }
+    /*主体右面样式*/
+    
+    .right {
+        background-color: white;
+        width: 100px;
+        float: left;
+        margin-left: -100px;
+        position: relative;
+        right: -100px;
+    }
+
+    /*主体中间样式*/
+    .middle{
+    	background-color: purple;
+    	width: 100%;
+    	float: left;
+    }
+    /*尾部样式*/
+    
+    footer {
+        background-color: blue;
+        height: 100px;
+    }
+    </style>
+</head>
+
+<body>
+<!-- 头部 -->
+    <header>
+        我是头
+    </header>
+    <!-- 主体 -->
+    <article>
+    <!-- 中间 -->
+        <div class="middle">
+            我是中间
+        </div>
+        <!-- 左侧列表 -->
+        <div class="left">
+            我是左
+        </div>
+        <!-- 右侧列表 -->
+        <div class="right">
+            我是右
+        </div>
+    </article>
+    <!-- 底部 -->
+    <footer>
+        我是尾
+    </footer>
+</body>
+
+</html>

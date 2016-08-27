@@ -1,0 +1,255 @@
+ body,
+ header,
+ nav,
+ ul,
+ input {
+     margin: 0;
+     padding: 0;
+ }
+ 
+ header {
+     background-color: #07A6E8;
+ }
+ 
+ body {
+     background-color: #AAACCC;
+ }
+ 
+ .logo {
+     line-height: 2;
+     text-align: center;
+     font-size: 40px;
+     color: rgba(255, 255, 255, 0.4);
+ }
+ 
+ .nav_wrapper {
+     background-color: #999;
+ }
+ /*清除浮动   子元素都是浮动，导致父元素坍缩*/
+ 
+ .clearfix:before {
+     content: ' ';
+     display: block;
+ }
+ 
+ .clearfix:after {
+     clear: both;
+     content: ' ';
+     display: block;
+ }
+ 
+ .c2,
+ .c3,
+ .c4,
+ .c6,
+ .c7,
+ .c9,
+ .c10,
+ .c12 {
+     position: relative;
+     float: left;
+ }
+ 
+ .c2 {
+     width: 15.666666%;
+     border: 1px solid red;
+ }
+ 
+ .c3 {
+     /*width: 25%;*/
+     width: 24%;
+     border: 1px solid blue;
+ }
+ 
+ .c4 {
+     width: 33.333333%;
+     border: 1px solid blue;
+ }
+ 
+ .c6 {
+     /*width: 50%;*/
+     width: 49%;
+     border: 1px solid yellow;
+ }
+ 
+ .c7 {
+     width: 58.333333%;
+     border: 1px solid yellow;
+ }
+ 
+ .c9 {
+     width: 75%;
+ }
+ 
+ .c10 {
+     width: 83.333333%;
+ }
+ 
+ .c12 {
+     border: 1px solid red;
+     width: 100%;
+ }
+ 
+ nav li,
+ #global_nav li {
+     list-style: none;
+     display: inline-block;
+ }
+ 
+ #global_nav {
+     text-align: right;
+ }
+ 
+ #global_nav li a {
+     display: inherit;
+     padding: 8px;
+     text-decoration: none;
+     color: #C8EFEF;
+ }
+ /*第二层  中间搜索的样式*/
+ 
+ .search_wrapper {
+     padding: 15px 0;
+ }
+ 
+ .search_wrapper input {
+     width: 100%
+ }
+ 
+ .search_bar input .search_wrapper button {
+     display: inline-block;
+     padding: 10px;
+ }
+ 
+ .tool_group {
+     /*margin-left: 10px;*/
+ }
+ 
+ .tool_group {
+     text-align: center;
+ }
+ /*第三层 中间导航样式*/
+ 
+ #product_nav {
+     background-color: #FFF;
+     border-bottom: 4px solid #07A6E8;
+ }
+ 
+ #product_nav li {
+     display: inline-block;
+     border: 1px solid black;
+ }
+ 
+ #product_nav li a {
+     display: inherit;
+     padding: 10px 20px;
+     border: 1px solid red;
+ }
+ /*中间轮播的样式*/
+ 
+ .container {
+     width: 1080px;
+     /*height: 100px;*/
+     margin: 0 auto;
+ }
+ /*设置轮播的样式*/
+ 
+ .hide {
+     display: none;
+ }
+ 
+ .slider_item img {
+     width: 100%;
+     /*height: 100%;*/
+ }
+ /*设置轮播左右滑动按钮*/
+ 
+ .tool_pn {
+     border: 1px solid red;
+ }
+ 
+ .tool_pn div {
+     position: relative;
+     margin: 5px;
+     top: -200px;
+     width: 35px;
+     height: 35px;
+     line-height: 35px;
+     padding: 5px;
+     background-color: rgba(0, 0, 0, 0.4);
+     color: white;
+     cursor: pointer;
+ }
+ 
+ .tool_pn .prev {
+     float: left;
+ }
+ 
+ .tool_pn .next {
+     float: right;
+ }
+ /*设置轮播中间的过度圆点*/
+ 
+ .slider_nav {
+     position: relative;
+     top: -30px;
+     text-align: center;
+ }
+ 
+ .slider_nav i {
+     width: 10px;
+     height: 10px;
+     border-radius: 5px;
+     display: inline-block;
+     background-color: #AAA;
+     cursor: pointer;
+ }
+ 
+ .slider_nav i.active {
+     background-color: #FFF;
+ }
+ /*中间背景颜色*/
+ 
+ .site_menu {
+     background-color: #FFF;
+     padding: 16px 0;
+ }
+ 
+ .cat dl {
+     margin: 0;
+     /*用gap 来代替*/
+     /*padding-bottom: 10px;*/
+     /*border-bottom: 1px dashed #DDD;*/
+ }
+ 
+ .site_menu .gap {
+     margin: 10px;
+     width: 90%;
+     height: 0;
+     border-top: 1px dashed #DDD;
+ }
+ 
+ .cat dt {
+     padding: 6px 8px;
+ }
+ 
+ .cat dd {
+     margin: 0;
+ }
+ 
+ .cat dd a {
+     color: #07A6E8;
+     display: inline-block;
+     padding: 6px 8px;
+ }
+ /*设置 子菜单*/
+ 
+ .cat .sub_menu {
+     position: absolute;
+     width: 260px;
+     top: 0;
+     left: 259px;
+     background-color: #FFF;
+     z-index: 1;
+     padding: 10px;
+ }

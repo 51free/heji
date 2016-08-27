@@ -1,0 +1,109 @@
+#auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+#width {
+  width: 460px;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 260px;
+  width: 460px;
+  height: 280px;
+  border: 1px solid lightgrey;
+}
+.hang1 {
+  width: 460px;
+  height: 90px;
+}
+.hang1 .num {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  top: 20px;
+  font-weight: bolder;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 15px;
+  vertical-align: center;
+  color: white;
+  float: left;
+  background-color: red;
+}
+.hang1 .charr {
+  width: 350px;
+  height: 60px;
+  position: absolute;
+  left: 100px;
+  top: 20px;
+  display: inline-block;
+  float: left;
+}
+.hang1 .charr .char1 {
+  position: relative;
+  top: 10px;
+  font-size: 20px;
+  color: green;
+  text-align: center;
+}
+.hang1 .charr .char2 {
+  position: relative;
+  top: 20px;
+  font-size: 10px;
+  color: green;
+  font-weight: bolder;
+  text-align: center;
+}
+.hang2 span:first-child,
+.hang2 span:last-child,
+.hang1 .charr .char2 span:last-child {
+  position: relative;
+  left: 10px;
+}
+.hang3 {
+  width: 460px;
+  height: 120px;
+  margin-top: 5px;
+  /* padding-left: @w5*10; */
+  text-align: center;
+  background-color: green;
+}
+.hang3 div {
+  margin: 10px 20px 10px 25px;
+  width: 20px;
+  color: white;
+  float: left;
+}
+.hang4 {
+  width: 460px;
+  height: 50px;
+  margin-top: 10px;
+  text-align: center;
+}
+.hang4 span {
+  font-size: 13px;
+}
+.hang4 .h41 {
+  margin-left: 60px;
+  width: 350px;
+  height: 5px;
+  background-color: red;
+}
+.hang4 .h42 {
+  position: relative;
+  top: -15px;
+  left: 400px;
+  width: 0;
+  height: 0;
+  border: 15px solid;
+  border-bottom: 0;
+  border-left-color: red;
+  border-right-color: transparent;
+  border-top-color: transparent;
+}

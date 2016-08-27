@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>4div</title>
+    <style type="text/css">
+    /*影子过滤器*/
+    
+    .shadw {
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        box-shadow: 2px 4px 6px #4C4C4C;
+    }
+    /*最外层DIV过滤器*/
+    
+    .outer {
+        border: 10px;
+        width: 316px;
+        height: 316px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -158px;
+        margin-top: -158px;
+        background-color: white;
+    }
+    /*上面DIV过滤器*/
+    
+    .topDiv {
+        margin-top: 4px;
+        margin-bottom: 4px;
+        margin-left: 108px;
+        position: relative;
+        background-color: #0000ff;
+    }
+    /*左边DIV过滤器*/
+    
+    .leftDiv {
+        margin-left: 4px;
+        position: absolute;
+        background-color: #800080;
+        display: inline-block;
+    }
+    /*中间DIV过滤器*/
+    
+    .centerDiv {
+        margin-left: 108px;
+        position: absolute;
+        background-color: white;
+        display: inline-block;
+    }
+    /*图片过滤器*/
+    
+    .pic {
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
+    }
+    /*右边DIV过滤器*/
+    
+    .rightDiv {
+        margin-left: 212px;
+        position: relative;
+        background-color: #008000;
+        display: inline-block;
+    }
+    /*底部DIV过滤器*/
+    
+    .bottomDiv {
+        position: relative;
+        background-color: #800F0F;
+        margin-top: 4px;
+        margin-left: 108px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="topDiv shadw"></div>
+        <div class="leftDiv shadw"></div>
+        <div class="centerDiv shadw"><img src="./a.jpg" class="pic"></div>
+        <div class="rightDiv shadw"></div>
+        <div class="bottomDiv shadw"></div>
+    </div>
+</body>
+
+</html>
